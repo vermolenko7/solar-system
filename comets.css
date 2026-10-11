@@ -1,0 +1,247 @@
+.hero-section {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 150px 20px 40px !important;
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.hero-subtitle {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: rgb(115, 120, 145);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.hero-section h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 82px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  display: block;
+}
+
+.hero-description {
+  color: rgb(135, 140, 160);
+  line-height: 1.7;
+  font-size: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 45px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 20px 0;
+  width: 100%;
+}
+
+.hero-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-stat-item strong {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.hero-stat-item span {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: rgb(115, 120, 145);
+  letter-spacing: 1px;
+}
+
+.comets-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px 120px;
+}
+
+.comets-banner {
+  background-color: #0b0c16;
+  background-image: 
+    linear-gradient(90deg, #090b15 35%, rgba(9, 11, 21, 0.6) 65%, rgba(9, 11, 21, 0.2) 100%), 
+    url('https://ibb.co');
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.comets-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.comet-card {
+  background: rgba(13, 16, 32, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 520px;
+}
+
+.comet-card-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.comet-image-box {
+  width: 100%;
+  height: 140px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.comet-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comet-card h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+
+.comet-text {
+  color: rgb(135, 140, 160);
+  line-height: 1.5;
+  font-size: 13px;
+  margin: 0 0 24px 0;
+}
+
+.comet-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 20px;
+}
+
+.spec-cell {
+  padding: 12px 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-cell span {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  color: rgb(100, 105, 130);
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.spec-cell strong {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.comet-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-row span {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  color: rgb(100, 105, 130);
+  margin-bottom: 2px;
+}
+
+.footer-row strong {
+  font-size: 11px;
+  color: rgb(160, 165, 190);
+  font-weight: 400;
+}
+
+.comet-anatomy-panel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  background: rgba(13, 16, 32, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+  padding: 24px;
+  margin-top: 40px;
+}
+
+.anatomy-column h4 {
+  font-family: 'Fraunces', serif;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  font-weight: 400;
+}
+
+.anatomy-column p {
+  color: rgb(115, 120, 145);
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 960px) {
+  .comets-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .comet-anatomy-panel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .comets-grid {
+    grid-template-columns: 1fr;
+  }
+  .comet-anatomy-panel {
+    grid-template-columns: 1fr;
+  }
+}

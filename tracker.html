@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar System — Live Telemetry</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tracker.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <span class="logo-dot"></span>
+      SOLAR SYSTEM
+    </div>
+    
+    <nav class="nav-links">
+      <a href="index.html">Planets & Dwarfs</a>
+      <a href="moons.html">Major Moons</a>
+      <a href="comets.html">Notable Comets</a>
+      <a href="tracker.html" class="active">Live Telemetry</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <span class="hero-subtitle">Sol — G-type main sequence star</span>
+      <h1>Our Solar System</h1>
+      <p class="hero-description">
+        Eight planets, five dwarf planets, hundreds of moons, millions of asteroids, and countless comets — orbiting a star 4.6 billion years old.
+      </p>
+
+      <div class="hero-stats">
+        <div class="hero-stat-item">
+          <strong>4.6B years</strong>
+          <span>SYSTEM AGE</span>
+        </div>
+        <div class="hero-stat-item">
+          <strong>1.0014 M☉</strong>
+          <span>TOTAL MASS</span>
+        </div>
+        <div class="hero-stat-item">
+          <strong>26,000 ly</strong>
+          <span>TO GALACTIC CENTER</span>
+        </div>
+        <div class="hero-stat-item">
+          <strong>230M years</strong>
+          <span>GALACTIC ORBIT</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="tracker-section">
+      
+      <div class="section-heading tracker-banner">
+        <div class="heading-content">
+          <span class="section-number">REAL-TIME DATA</span>
+          <h2>Live Telemetry</h2>
+          <p>
+            Continuous mathematical calculation of orbital mechanics showing instant geometric distances in our cosmic system.
+          </p>
+        </div>
+      </div>
+
+      <div class="tracker-grid">
+        
+        <!-- Карточка 1: Земля - Солнце -->
+        <div class="tracker-card">
+          <div class="tracker-card-header">
+            <span class="tracker-tag">ORBITAL PAIR</span>
+            <h3>Earth ⟷ Sun</h3>
+          </div>
+          <div class="distance-display">
+            <span class="digits" id="sun-distance">149,584,246.000</span>
+            <span class="unit">km</span>
+          </div>
+          <div class="tracker-meta">
+            <div class="meta-row">
+              <span>CURRENT STATUS</span>
+              <strong id="sun-status" class="status-approaching">Approaching Perihelion</strong>
+            </div>
+            <div class="meta-row">
+              <span>VELOCITY RATE</span>
+              <strong>~ 0.489 km/s</strong>
+            </div>
+            <div class="meta-row">
+              <span>LIGHT TRAVEL TIME</span>
+              <strong id="sun-light">8m 18.56s</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Карточка 2: Луна - Земля -->
+        <div class="tracker-card">
+          <div class="tracker-card-header">
+            <span class="tracker-tag">ORBITAL PAIR</span>
+            <h3>Moon ⟷ Earth</h3>
+          </div>
+          <div class="distance-display">
+            <span class="digits" id="moon-distance">388,943.000</span>
+            <span class="unit">km</span>
+          </div>
+          <div class="tracker-meta">
+            <div class="meta-row">
+              <span>CURRENT STATUS</span>
+              <strong id="moon-status" class="status-receding">Receding (Apogee Drift)</strong>
+            </div>
+            <div class="meta-row">
+              <span>VELOCITY RATE</span>
+              <strong>~ 0.004 km/s</strong>
+            </div>
+            <div class="meta-row">
+              <span>LIGHT TRAVEL TIME</span>
+              <strong id="moon-light">1.297s</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="tracker.js"></script>
+</body>
+</html>

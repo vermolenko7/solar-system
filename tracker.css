@@ -1,0 +1,198 @@
+.hero-section {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 150px 20px 40px !important;
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.hero-subtitle {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: rgb(115, 120, 145);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.hero-section h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 82px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  display: block;
+}
+
+.hero-description {
+  color: rgb(135, 140, 160);
+  line-height: 1.7;
+  font-size: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 45px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 20px 0;
+  width: 100%;
+}
+
+.hero-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-stat-item strong {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.hero-stat-item span {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: rgb(115, 120, 145);
+  letter-spacing: 1px;
+}
+
+.tracker-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px 120px;
+}
+
+.tracker-banner {
+  background-color: #0b0c16;
+  background-image: 
+    linear-gradient(90deg, #090b15 35%, rgba(9, 11, 21, 0.6) 65%, rgba(9, 11, 21, 0.2) 100%), 
+    url('https://ibb.co');
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.tracker-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.tracker-card {
+  background: rgba(13, 16, 32, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.tracker-card-header {
+  margin-bottom: 25px;
+}
+
+.tracker-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: rgb(100, 105, 130);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.tracker-card h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+}
+
+.distance-display {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 25px;
+}
+
+.distance-display .digits {
+  font-family: 'Inter', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.distance-display .unit {
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  color: rgb(115, 120, 145);
+}
+
+.tracker-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meta-row span {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: rgb(115, 120, 145);
+}
+
+.meta-row strong {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.status-approaching {
+  color: #00ffaa !important;
+}
+
+.status-receding {
+  color: #ff9d00 !important;
+}
+
+@media (max-width: 820px) {
+  .tracker-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .distance-display .digits {
+    font-size: 32px;
+  }
+}
